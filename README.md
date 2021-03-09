@@ -1,6 +1,7 @@
 # ica0017
 
 # Lab2
+```yaml
 
 Policy JSON:
 
@@ -37,6 +38,7 @@ Policy JSON:
             "Resource": "*"
         }
     ]
+```
 
 # Lab3
 
