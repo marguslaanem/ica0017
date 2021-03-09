@@ -41,6 +41,7 @@ Policy JSON:
 ```
 
 # Lab3
+public ip: 13.49.240.124
 
 url: http://ec2-13-49-240-124.eu-north-1.compute.amazonaws.com/
 
