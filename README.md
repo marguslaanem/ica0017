@@ -46,6 +46,4 @@ url: http://ec2-13-49-240-124.eu-north-1.compute.amazonaws.com/
 
 # Lab4
 
-index URL: https://mlaane.s3.eu-north-1.amazonaws.com/index.html
-
-error URL: https://mlaane.s3.eu-north-1.amazonaws.com/error.html
+Endpoint URL: http://mlaane.s3-website.eu-north-1.amazonaws.com/
