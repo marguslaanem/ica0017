@@ -1,17 +1,3 @@
-terraform {
-  required_providers {
-    aws = {
-      source  = "hashicorp/aws"
-      version = "~> 3.0"
-    }
-  }
-}
-
-provider "aws" {
-  shared_credentials_file = "/Users/margus/.aws/credentials"
-  region = "eu-north-1"
-}
-
 resource "aws_iam_group" "mlaane" {
   name = "mlaane"
 }
@@ -76,3 +62,17 @@ resource "aws_iam_policy_attachment" "mlaane-attach" {
   policy_arn = aws_iam_policy.mlaane.arn
 }
 
+data "aws_iam_policy_document" "mlaane_s3" {
+  statement {
+    actions = [
+      "s3:GetObject"
+    ]
+    principals {
+      identifiers = ["*"]
+      type = "AWS"
+    }
+    resources = [
+      "arn:aws:s3:::mlaane/*"
+    ]
+  }
+}
